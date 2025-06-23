@@ -1,0 +1,50 @@
+<h1>Profissionais</h1>
+
+<div class="funcionarios-grid">
+  {{#each funcionarios}}
+    <div class="funcionario-card">
+      <img src="{{this.imagem}}" alt="{{this.nome}}" class="funcionario-foto">
+      <h2>{{this.nome}}</h2>
+      <p><strong>Especialização:</strong> {{this.especializacao}}</p>
+      <p><strong>Telefone:</strong> {{this.telefone}}</p>
+    </div>
+  {{/each}}
+</div>
+
+<style>
+.funcionarios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+html, body {
+body {
+
+background:white;
+}
+.funcionario-foto {
+  width: 200px;      /* aumentei de 120px para 160px */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: none;      /* removido o contorno branco */
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: black;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+}
+h2 {
+ 
+  color: black;
+ 
+}
+</style>

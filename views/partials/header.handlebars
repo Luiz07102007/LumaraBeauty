@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/servicos">Serviços</a>
+    <a href="/funcionarios">Funcionários</a>
+
+    {{#if usuario}}
+      <a href="/meus-agendamentos">Meus Agendamentos</a>
+      <a href="/agendamento">Agendamento</a>
+      <a href="/logout">Sair</a>
+    {{else}}
+      <a href="/login">Login</a>
+      <a href="/cadastro">Cadastrar</a>
+    {{/if}}
+  </nav>
+</header>

@@ -1,0 +1,57 @@
+<div style="min-height: 100vh; display: flex; flex-direction: column; position: relative; padding-bottom: 60px;">
+  <!-- Seu conteúdo atual -->
+  <h1 style="text-align: center; color: white; margin-top: 30px; font-size: 28px;">
+    Meus Agendamentos
+  </h1>
+
+  {{#if agendamentos.length}}
+    {{#each agendamentos}}
+      <div style="
+        background-color: #f3e4d7;
+        color: black;
+        max-width: 550px;
+        margin: 30px auto;
+        padding: 20px 25px;
+        border-radius: 25px;
+        box-shadow: 8px 8px 0 #d0aa8b;
+      ">
+        <p><strong>Serviço:</strong> {{Servico.nome}}</p>
+        <p><strong>Funcionário:</strong> {{Funcionario.nome}}</p>
+        <p><strong>Data:</strong> {{data}}</p>
+        <p><strong>Horário:</strong> {{horario}}</p>
+
+        <form action="/cancelar-agendamento/{{id}}" method="POST">
+          <button type="submit" style="
+            background-color: #b38a6a;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+          "
+          onmouseover="this.style.backgroundColor='#a0765c'"
+          onmouseout="this.style.backgroundColor='#b38a6a'">
+            Cancelar
+          </button>
+        </form>
+      </div>
+    {{/each}}
+  {{else}}
+    <p style="text-align: center; margin-top: 40px; color: white;">
+      Você ainda não tem agendamentos.
+    </p>
+  {{/if}}
+
+
+  <footer style="
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #d4ac8c;
+
+
+  ">
+  
+</div>

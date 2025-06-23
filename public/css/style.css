@@ -1,0 +1,258 @@
+html, body {
+body {
+margin: 0;
+font-family: 'Ovo', serif;
+background: linear-gradient(to right, #d7a98c, #c79682);
+min-height: 100vh;
+color: white;
+text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+display: flex;
+flex-direction: column;
+}
+}
+
+main {
+text-align: center;
+padding: 30px 15px;
+flex: 1; /* Faz o main crescer e empurrar o footer pra baixo */
+}
+
+footer {
+background-color: #eee;
+text-align: center;
+padding: 15px;
+font-size: 14px;
+color: #555;
+}
+
+header {
+background: linear-gradient(to right, #d7a98c, #c79682);
+color: white;
+padding: 10px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+font-weight: 500;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+
+h1 {
+font-size: 32px;
+margin-top: 10px;
+color: #a3685a;
+}
+
+footer {
+background-color: #eee;
+text-align: center;
+padding: 15px;
+font-size: 14px;
+color: #555;
+}
+
+/* .hero-img {
+width: 100%;
+max-height: 100%;
+object-fit: cover;
+border-bottom: 4px solid #dcb7a2;
+margin-top: 20px;
+} */
+ .logo-home {
+font-family: 'Ovo', serif;
+font-size: 60px;
+margin-top: 40px;
+color: #ffffff;
+text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+font-size: 32px;
+margin-top: 10px;
+color: #fff;
+}
+
+.login-container {
+max-width: 800px;
+margin: 50px auto;
+display: flex;
+background-color: #f4e9e4;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-image {
+flex: 1;
+}
+
+.login-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.login-form {
+flex: 1;
+padding: 40px 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.login-form h1 {
+font-size: 28px;
+margin-bottom: 20px;
+text-align: center;
+font-family: 'Ovo', serif;
+color: #2c1e1e;
+}
+
+.login-form form {
+display: flex;
+flex-direction: column;
+}
+
+.login-form label {
+margin: 10px 0 5px;
+font-size: 15px;
+color: #2c1e1e;
+}
+
+.login-form input {
+padding: 10px;
+border: none;
+border-radius: 6px;
+background-color: #fff;
+margin-bottom: 10px;
+width: 90%;
+}
+
+.login-form button {
+background-color: #bb9276;
+color: white;
+border: none;
+padding: 10px;
+margin-top: 10px;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.login-form button:hover {
+background-color: #a97e63;
+}
+
+.login-form .forgot {
+font-size: 14px;
+margin-top: 15px;
+text-align: center;
+color: #7e6a5a;
+}
+
+.login-form .forgot a {
+color: #5c3b2e;
+font-weight: bold;
+text-decoration: none;
+}
+
+.login-form .forgot a:hover {
+text-decoration: underline;
+}
+
+
+.registro-container {
+max-width: 800px;
+margin: 50px auto;
+display: flex;
+background-color: #f4e9e4;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.registro-image {
+flex: 1;
+}
+
+.registro-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.registro-form {
+flex: 1;
+padding: 40px 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.registro-form h1 {
+font-size: 28px;
+margin-bottom: 20px;
+text-align: center;
+font-family: 'Ovo', serif;
+color: #2c1e1e;
+}
+
+.registro-form form {
+display: flex;
+flex-direction: column;
+}
+
+.registro-form label {
+margin: 10px 0 5px;
+font-size: 15px;
+color: #2c1e1e;
+}
+
+.registro-form input {
+padding: 10px;
+border: none;
+border-radius: 6px;
+background-color: #fff;
+margin-bottom: 10px;
+width: 90%;
+}
+
+.registro-form button {
+background-color: #bb9276;
+color: white;
+border: none;
+padding: 10px;
+margin-top: 10px;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.registro-form button:hover {
+background-color: #a97e63;
+}
+
+.home-background {
+  background-image: url('/img/salaonovo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  border-radius: 0px;
+}
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
